@@ -51,3 +51,97 @@ antirootkits
 #ou
 
 sudo antirootkits;
+
+
+
+
+
+***CONFIGURANDO SCAN AUTOMATIZADO CRON
+
+***O script do githubt antirootkit.sh, remova a extensão .sh e ficará antirootkit
+
+copie para /bin
+
+sudo chmod +x antirootkit;
+
+sudo cp -r antirootkit /bin;
+
+#teste
+
+sudo antirootkit;
+
+
+
+
+
+
+
+#uma vez ao dia
+
+nano /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
+
+chmod 700 /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
+
+
+
+
+
+
+#adicione no arquivo:
+
+#!/bin/sh
+
+(
+
+/bin/antirootkits > antirootkits.txt;
+
+gedit antirootkits.txt;
+
+) 
+
+
+
+
+
+
+
+#A cada hora
+
+nano /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
+
+chmod 700 /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
+
+#adicione no arquivo:
+
+#!/bin/sh
+
+(
+
+/bin/antirootkits;
+
+gedit antirootkits.txt;
+
+) 
+
+
+#ou adicione para printar pelo gedit o terminal completo em relatório.
+#!/bin/sh
+(
+/bin/antirootkits > antirootkits.txt;
+gedit antirootkits.txt;
+) 
+
+
+
+
+
+
+***Restart o serviço do cron ou Reinicie o pc do linux
+
+sudo service cron reload;
+
+#ou
+
+/etc/init.d/cron reload;
+
+
