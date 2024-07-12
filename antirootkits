@@ -1,7 +1,8 @@
 #!/bin/bash
 sudo echo "";
 sudo echo "Scanning COMBO RKhunter + Chkrootkit";
-sudo echo "Para gerar relatórios use sudo antirootkits > antirootkits.txt; gedit antirootkits.txt;";
+sudo echo "Para gerar relatórios use sudo antirootkits >> /home/antirootkits.txt;";
+sudo echo "ATENÇÃO: sudo cat /var/log/rkhunter.log >> /home/antirootkits.txt; no fim do script gravará o arquivo na pasta home chamda antirootkits.txt"
 sudo echo "";
 sudo echo "ATUALIZANDO RKHUNTER COM sudo rkhunter --propupd;";
 sudo rkhunter --propupd;
@@ -33,7 +34,10 @@ sudo chkrootkit -q;
 sudo echo;
 sudo echo;
 sudo echo "Abrindo relatórios";
+#Para o cron somente que gravará na pasta /home/antirootkits.txt
+sudo cat /var/log/rkhunter.log >> /home/antirootkits.txt;
+#Para uso normal do usuário quando executar o script
 sudo gedit /var/log/rkhunter.log;
-sudo gedit antirootkits.txt;
+sudo gedit /home/antirootkits.txt;
 echo;
 echo;
