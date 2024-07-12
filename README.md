@@ -290,6 +290,8 @@ sudo gedit /home/antirootkits.txt;
 
 No vídeo tutorial, alertei que o cron daria um pop up com o gedit e mostraria cada hora o relatório para o usuário, mas o cron roda só em segundo plano e não interage com a sessão do usuário.
 
+Modifiquei e consertei os scripts e comandos.
+
 Por isso o usuário terá que verificar de hora em hora os relatórios gerados em:
 
 /home/antirootkits.txt;
