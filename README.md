@@ -116,11 +116,13 @@ sudo antirootkit;
 
 #SCAN UMA VEZ AO DIA
 
-nano /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
+sudo touch /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
 
-chmod 700 /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
+sudo chmod 700 /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
 
 sudo chmod +x /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
+
+sudo nano /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
 
 
 
@@ -180,11 +182,13 @@ echo "#############################################" >> /home/antirootkits.txt;"
 #SCAN A CADA HORA
 
 
-nano /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
+sudo touch /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
 
-chmod 700 /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
+sudo chmod 700 /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
 
 sudo chmod +x /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
+
+sudo nano /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
 
 
 #adicione no arquivo:
@@ -257,6 +261,8 @@ sudo crontab -e;
 #adicione a linha
 
 0 * * * * /bin/antirootkits >> /home/antirootkits.txt 2>&1
+0 * * * * echo "" >> /home/antirootkits.txt 2>&1
+0 * * * * echo "" >> /home/antirootkits.txt 2>&1
 
 
 #outro exemplo que pode ser adicionado com update
