@@ -178,9 +178,12 @@ echo "#############################################" >> /home/antirootkits.txt;"
 
 #A cada hora
 
+
 nano /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
 
 chmod 700 /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
+
+sudo chmod +x /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
 
 #adicione no arquivo:
 
@@ -188,19 +191,39 @@ chmod 700 /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
 
 (
 
-/bin/antirootkits;
+echo "##############################################" >> /home/antirootkits.txt;"
 
-gedit antirootkits.txt;
+echo "#############################################" >> /home/antirootkits.txt;"
+
+echo "" >> /home/antirootkits.txt;"
+
+echo "" >> /home/antirootkits.txt;"
+
+date >> /home/antirootkits.txt;"
+
+sudo /bin/antirootkits >> /home/antirootkits.txt;"
+
+echo "" >> /home/antirootkits.txt;"
+
+echo "" >> /home/antirootkits.txt;"
+
+date >> /home/antirootkits.txt;"
+
+cat /var/log/rkhunter.log >> /home/antirootkits.txt;
+
+echo "##############################################" >> /home/antirootkits.txt;"
+
+echo "#############################################" >> /home/antirootkits.txt;"
 
 ) 
 
+##################################################################################
 
-#ou adicione para printar pelo gedit o terminal completo em relatório.
-#!/bin/sh
-(
-/bin/antirootkits > antirootkits.txt;
-gedit antirootkits.txt;
-) 
+##################################################################################
+
+##################################################################################
+
+
 
 
 
@@ -214,5 +237,15 @@ sudo service cron reload;
 #ou
 
 /etc/init.d/cron reload;
+
+
+##################################################################################
+
+##################################################################################
+
+##################################################################################
+
+
+
 
 
