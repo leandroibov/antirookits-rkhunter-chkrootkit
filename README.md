@@ -246,6 +246,70 @@ sudo service cron reload;
 ##################################################################################
 
 
+####OUTRA OPÇÃO:
+
+####Adicione no cron pelo cron tab scanning a cada hora:
+
+sudo crontab -e;
+
+#adicione a linha
+
+0 * * * * /bin/antirootkits >> /home/antirootkits.txt 2>&1
+
+
+#outro exemplo que pode ser adicionado com update
+
+0 * * * * sudo apt update -y && sudo apt upgrade -y 2>&1
+
+
+
+##################################################################################
+
+##################################################################################
+
+##################################################################################
+
+
+OBS E ATENÇÃO:
+
+
+#Para o cron somente gravará na pasta /home/antirootkits.txt
+
+sudo cat /var/log/rkhunter.log >> /home/antirootkits.txt;
+
+#Para uso normal do usuário quando executar o script
+
+sudo gedit /var/log/rkhunter.log;
+
+sudo gedit /home/antirootkits.txt;
+
+
+####ERRATA
+
+No vídeo tutorial, alertei que o cron daria um pop up com o gedit e mostraria cada hora o relatório para o usuário, mas o cron roda só em segundo plano e não interage com a sessão do usuário.
+
+Por isso o usuário terá que verificar de hora em hora os relatórios gerados em:
+
+/home/antirootkits.txt;
+
+use
+
+gedit /home/antirootkits.txt;
+
+para checar os relatório a cada hora, e apague quando necessário...
+
+
+##### 
+
+
+
+
+
+
+
+
+
+
 
 
 
