@@ -132,39 +132,19 @@ sudo nano /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
 
 ##################################################################################
 
-
-
-#Adicione no arquivo
+#adicione no arquivo:
 
 #!/bin/sh
 
 (
 
-echo "##############################################" >> /home/antirootkits.txt;"
-
-echo "#############################################" >> /home/antirootkits.txt;"
-
-echo "" >> /home/antirootkits.txt;"
-
-echo "" >> /home/antirootkits.txt;"
-
-date >> /home/antirootkits.txt;"
-
 sudo /bin/antirootkits >> /home/antirootkits.txt;"
 
-echo "" >> /home/antirootkits.txt;"
-
-echo "" >> /home/antirootkits.txt;"
-
-date >> /home/antirootkits.txt;"
-
-cat /var/log/rkhunter.log >> /home/antirootkits.txt;
-
-echo "##############################################" >> /home/antirootkits.txt;"
-
-echo "#############################################" >> /home/antirootkits.txt;"
-
 ) 
+
+
+
+
 
 
 ##################################################################################
@@ -197,31 +177,10 @@ sudo nano /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
 
 (
 
-echo "##############################################" >> /home/antirootkits.txt;"
-
-echo "#############################################" >> /home/antirootkits.txt;"
-
-echo "" >> /home/antirootkits.txt;"
-
-echo "" >> /home/antirootkits.txt;"
-
-date >> /home/antirootkits.txt;"
-
 sudo /bin/antirootkits >> /home/antirootkits.txt;"
 
-echo "" >> /home/antirootkits.txt;"
-
-echo "" >> /home/antirootkits.txt;"
-
-date >> /home/antirootkits.txt;"
-
-cat /var/log/rkhunter.log >> /home/antirootkits.txt;
-
-echo "##############################################" >> /home/antirootkits.txt;"
-
-echo "#############################################" >> /home/antirootkits.txt;"
-
 ) 
+
 
 ##################################################################################
 
