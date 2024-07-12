@@ -301,6 +301,12 @@ gedit /home/antirootkits.txt;
 para checar os relatório a cada hora, e apague quando necessário...
 
 
+##########
+LINK DO VÍDEO TUTORIAL SOBRE CHKROOTKIT E RKHUNTER
+
+https://www.youtube.com/watch?v=7l12iMVMK70
+
+
 ##### 
 
 
