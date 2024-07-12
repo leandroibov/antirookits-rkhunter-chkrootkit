@@ -114,6 +114,8 @@ sudo antirootkit;
 
 #CRIE, AUTORIZE E CONFIGURE O ARQUIVO DO CRON
 
+#SCAN UMA VEZ AO DIA
+
 nano /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
 
 chmod 700 /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
@@ -129,7 +131,6 @@ sudo chmod +x /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
 ##################################################################################
 
 
-#SCAN uma vez ao dia
 
 #Adicione no arquivo
 
@@ -176,14 +177,15 @@ echo "#############################################" >> /home/antirootkits.txt;"
 
 
 
-#A cada hora
+#SCAN A CADA HORA
 
 
 nano /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
 
 chmod 700 /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
 
-sudo chmod +x /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
+sudo chmod +x /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
+
 
 #adicione no arquivo:
 
