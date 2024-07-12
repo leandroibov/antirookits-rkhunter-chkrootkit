@@ -115,8 +115,11 @@ sudo antirootkit;
 #CRIE, AUTORIZE E CONFIGURE O ARQUIVO DO CRON
 
 nano /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
+
 chmod 700 /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
+
 sudo chmod +x /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
+
 
 
 ##################################################################################
