@@ -4,6 +4,10 @@ sudo echo "Scanning COMBO RKhunter + Chkrootkit";
 sudo echo "Para gerar relatórios use sudo antirootkits >> /home/antirootkits.txt;";
 sudo echo "ATENÇÃO: sudo cat /var/log/rkhunter.log >> /home/antirootkits.txt; no fim do script gravará o arquivo na pasta home chamda antirootkits.txt"
 sudo echo "";
+echo "" >> /home/antirootkits.txt;
+echo "###########################################################" >> /home/antirootkits.txt;
+date >> /home/antirootkits.txt;
+echo "###########################################################" >> /home/antirootkits.txt;
 sudo echo "ATUALIZANDO RKHUNTER COM sudo rkhunter --propupd;";
 sudo rkhunter --propupd;
 sudo echo "";
@@ -31,6 +35,7 @@ sudo echo;
 sudo echo;
 sudo echo "CHKROOTKIT - Quiet Mode, mostra só os ALERTAS E SUSPEITAS ---> sudo chkrootkit -q";
 sudo chkrootkit -q;
+echo "" >> /home/antirootkits.txt;
 sudo echo;
 sudo echo;
 sudo echo "Abrindo relatórios";
