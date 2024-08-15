@@ -1,9 +1,10 @@
 sha256 hashs:
 
+93baa32c9e5bbb25bfac9207e4a52df1e858cd31bd6851c6d830d45da3c937ef  antirootkits
 
-9f4aaca8f61d8e8267e366421d3607d03f883aaf64237cf847b9eca4f82884ce  antirootkits.sh
+93baa32c9e5bbb25bfac9207e4a52df1e858cd31bd6851c6d830d45da3c937ef  antirootkits.sh
 
-9f4aaca8f61d8e8267e366421d3607d03f883aaf64237cf847b9eca4f82884ce  antirootkits
+
 
 
 
