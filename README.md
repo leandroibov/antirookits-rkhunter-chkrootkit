@@ -277,11 +277,12 @@ https://www.youtube.com/watch?v=7l12iMVMK70
 
 ##################################################################################################
 
-Doe monero para nos ajudar: 87JGuuwXzoMGwQAcSD7cvS7D7iacPpN2f5bVqETbUvCgdEmrPZa12gh5DSiKKRgdU7c5n5x1UvZLj8PQ7AAJSso5CQxgjak
+Doe monero para nos ajudar: 
 
-Aprenda conosco pelos cursos gravados online e grupo de sinais:
+87JGuuwXzoMGwQAcSD7cvS7D7iacPpN2f5bVqETbUvCgdEmrPZa12gh5DSiKKRgdU7c5n5x1UvZLj8PQ7AAJSso5CQxgjak
 
-https://traderprofissional.com.br/comprar_nossos_cursos.aspx 
+
+
 
 Página oficial de segurança digital:
 
