@@ -1,17 +1,10 @@
-##################################################################################
 
-##################################################################################
 
-##################################################################################
+# Precisa instalar primeiro o rkhunter e o chkrootkit;
 
 
 
-
-#Precisa instalar primeiro o rkhunter e o chkrootkit;
-
-
-
-#Para Debian ou Ubuntu
+## Para Debian ou Ubuntu
 
 sudo apt clean;
 
@@ -25,26 +18,15 @@ sudo apt install rkhunter -y;
 
 sudo apt install chkrootkit -y;
 
-##################################################################################
+# 
 
-##################################################################################
-
-##################################################################################
-
-
-#autorize execução
+autorize execução
 
 sudo chmod +x antirootkits.sh;
 
 sudo chmod +x antirootkits;
 
-
-##################################################################################
-
-##################################################################################
-
-##################################################################################
-
+# 
 
 #Execute
 
@@ -55,12 +37,7 @@ sudo ./antirootkits.sh
 cp -r antirootkits /bin;
 
 
-##################################################################################
-
-##################################################################################
-
-##################################################################################
-
+# 
 
 #execução
 
@@ -71,16 +48,9 @@ antirootkits
 sudo antirootkits;
 
 
-##################################################################################
+# 
 
-##################################################################################
-
-##################################################################################
-
-
-
-
-***CONFIGURANDO SCAN AUTOMATIZADO CRON
+## ***CONFIGURANDO SCAN AUTOMATIZADO CRON
 
 ***O script do githubt antirootkit.sh, remova a extensão .sh e ficará antirootkit
 
@@ -95,15 +65,8 @@ sudo cp -r antirootkit /bin;
 sudo antirootkit;
 
 
-##################################################################################
 
-##################################################################################
-
-##################################################################################
-
-
-
-#CRIE, AUTORIZE E CONFIGURE O ARQUIVO DO CRON
+## CRIE, AUTORIZE E CONFIGURE O ARQUIVO DO CRON
 
 #SCAN UMA VEZ AO DIA
 
@@ -117,11 +80,7 @@ sudo nano /etc/cron.daily/chkrootkit-rkhunter-scan.sh;
 
 
 
-##################################################################################
-
-##################################################################################
-
-##################################################################################
+# 
 
 #adicione no arquivo:
 
@@ -136,21 +95,7 @@ sudo /bin/antirootkits >> /home/antirootkits.txt;"
 
 
 
-
-
-##################################################################################
-
-##################################################################################
-
-##################################################################################
-
-
-
-
-
-
-
-#SCAN A CADA HORA
+## SCAN A CADA HORA
 
 
 sudo touch /etc/cron.hourly/chkrootkit-rkhunter-scan.sh;
@@ -173,20 +118,8 @@ sudo /bin/antirootkits >> /home/antirootkits.txt;"
 ) 
 
 
-##################################################################################
 
-##################################################################################
-
-##################################################################################
-
-
-
-
-
-
-
-
-***Restart o serviço do cron ou Reinicie o pc do linux
+## ***Restart o serviço do cron ou Reinicie o pc do linux
 
 sudo service cron reload;
 
@@ -195,14 +128,10 @@ sudo service cron reload;
 /etc/init.d/cron reload;
 
 
-##################################################################################
-
-##################################################################################
-
-##################################################################################
 
 
-####OUTRA OPÇÃO:
+
+## OUTRA OPÇÃO:
 
 ####Adicione no cron pelo cron tab scanning a cada hora:
 
@@ -210,9 +139,12 @@ sudo crontab -e;
 
 #adicione a linha
 
-0 * * * * /bin/antirootkits >> /home/antirootkits.txt 2>&1
+0 * * * * /bin/antirootkits >> /home/antirootkits.txt 2>&1 
+
 0 * * * * echo "" >> /home/antirootkits.txt 2>&1
+
 0 * * * * echo "" >> /home/antirootkits.txt 2>&1
+
 
 
 #outro exemplo que pode ser adicionado com update
@@ -220,12 +152,7 @@ sudo crontab -e;
 0 * * * * sudo apt update -y && sudo apt upgrade -y 2>&1
 
 
-
-##################################################################################
-
-##################################################################################
-
-##################################################################################
+# 
 
 
 OBS E ATENÇÃO:
@@ -242,7 +169,7 @@ sudo gedit /var/log/rkhunter.log;
 sudo gedit /home/antirootkits.txt;
 
 
-####ERRATA
+## ERRATA
 
 No vídeo tutorial, alertei que o cron daria um pop up com o gedit e mostraria cada hora o relatório para o usuário, mas o cron roda só em segundo plano e não interage com a sessão do usuário.
 
@@ -264,8 +191,6 @@ LINK DO VÍDEO TUTORIAL SOBRE CHKROOTKIT E RKHUNTER
 
 https://www.youtube.com/watch?v=7l12iMVMK70
 
-
-##################################################################################################
 
 # Doe monero para nos ajudar: (donate XMR)
 
