@@ -267,9 +267,9 @@ https://www.youtube.com/watch?v=7l12iMVMK70
 
 ##################################################################################################
 
-Doe monero para nos ajudar: 
+# Doe monero para nos ajudar: (donate XMR)
 
-87JGuuwXzoMGwQAcSD7cvS7D7iacPpN2f5bVqETbUvCgdEmrPZa12gh5DSiKKRgdU7c5n5x1UvZLj8PQ7AAJSso5CQxgjak
+    87JGuuwXzoMGwQAcSD7cvS7D7iacPpN2f5bVqETbUvCgdEmrPZa12gh5DSiKKRgdU7c5n5x1UvZLj8PQ7AAJSso5CQxgjak
 
 
 
